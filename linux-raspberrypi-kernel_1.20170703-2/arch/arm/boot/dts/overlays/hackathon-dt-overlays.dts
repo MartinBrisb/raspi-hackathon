@@ -1,0 +1,22 @@
+/dts-v1/;
+
+/ {
+	model = "LSM6DSM IMU";
+	compatible = "st,lsm6dsm";
+
+	fragmetn@0 {
+		target = <&i2c1>;
+		__overlay__ {
+			#address-cells = <0x1>;
+			#size-cells = <0x0>;
+
+			lsm6dsm@6b {
+				reg = <0x6b>;
+				interrupt-parent = <&gpio>;
+				interrupts = <26 IRQ_TYPE_EDGE_RISING>;
+				status = "ok";
+			};
+		};
+	};
+};
+
