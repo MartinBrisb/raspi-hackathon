@@ -1,4 +1,5 @@
 # Overlays for the Raspberry Pi platform
+# important: .dts files must be named module-overlay.dts
 
 dtbo-$(CONFIG_ARCH_BCM2835) += \
 	adau1977-adc.dtbo \
@@ -116,7 +117,7 @@ dtbo-$(CONFIG_ARCH_BCM2835) += \
 	w1-gpio.dtbo \
 	w1-gpio-pullup.dtbo \
 	wittypi.dtbo \
-	hackathon-dt-overlays.dtbo
+	hackathon.dtbo
 
 targets += dtbs dtbs_install
 targets += $(dtbo-y)
