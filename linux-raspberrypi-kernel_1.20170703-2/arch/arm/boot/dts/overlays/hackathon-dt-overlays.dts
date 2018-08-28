@@ -4,7 +4,11 @@
 	model = "LSM6DSM IMU";
 	compatible = "st,lsm6dsm";
 
+<<<<<<< HEAD
+	fragment@0 {
+=======
 	fragmetn@0 {
+>>>>>>> 40bd85c280bfcb3c1ac6203e1a584bd3c3ddd4de
 		target = <&i2c1>;
 		__overlay__ {
 			#address-cells = <0x1>;
