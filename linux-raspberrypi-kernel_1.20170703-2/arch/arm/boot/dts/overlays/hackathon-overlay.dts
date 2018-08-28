@@ -1,6 +1,6 @@
-
-
 /dts-v1/;
+/plugin/;
+
 
 / {
         model = "LSM6DSM IMU";
